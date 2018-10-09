@@ -143,6 +143,9 @@ blockquote {
 			background-color: $accent-light;
 			left: 80px;
 			bottom: 20px;
+			&::before {
+				content: '\a';
+			}
 		}
 	}
 	&::before {

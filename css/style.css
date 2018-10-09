@@ -136,6 +136,8 @@ blockquote {
       background-color: #F6F5FE;
       left: 80px;
       bottom: 20px; }
+      blockquote > p > cite::before {
+        content: '\a'; }
   blockquote::before {
     content: "”";
     position: absolute;
