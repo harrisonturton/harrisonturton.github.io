@@ -171,12 +171,15 @@ blockquote {
 	.content {
 		font-family: $body;
 		font-weight: 400;
-		font-size: 15pt;
 		line-height: 1.75em;
 		color: $font-color;
 
 		@include for-desktop {
 			width: 700px;
+			font-size: 15pt;
+		}
+		@include for-mobile {
+			font-size: 12pt;
 		}
 
 		& > p:first-of-type:first-letter {

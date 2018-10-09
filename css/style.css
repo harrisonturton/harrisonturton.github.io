@@ -158,12 +158,15 @@ blockquote {
   .single .content {
     font-family: Georgia, serif;
     font-weight: 400;
-    font-size: 15pt;
     line-height: 1.75em;
     color: #313131; }
     @media (min-width: 599px) {
       .single .content {
-        width: 700px; } }
+        width: 700px;
+        font-size: 15pt; } }
+    @media (max-width: 599px) {
+      .single .content {
+        font-size: 12pt; } }
     .single .content > p:first-of-type:first-letter {
       float: left;
       font-weight: bold;
