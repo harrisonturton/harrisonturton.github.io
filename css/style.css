@@ -29,10 +29,10 @@ h1 {
   padding-bottom: 40px; }
   h1::selection {
     background: #E4E7FD; }
-  @media (max-width: 599px) {
+  @media (max-width: 800px) {
     h1 {
       font-size: 26pt; } }
-  @media (min-width: 599px) {
+  @media (min-width: 800px) {
     h1 {
       font-size: 36pt;
       max-width: 60vw; } }
@@ -69,10 +69,10 @@ time {
   text-align: center;
   line-height: 1.5em;
   color: #959494; }
-  @media (max-width: 599px) {
+  @media (max-width: 800px) {
     .subheader {
       font-size: 12pt; } }
-  @media (min-width: 599px) {
+  @media (min-width: 800px) {
     .subheader {
       font-size: 15pt;
       max-width: 70vw; } }
@@ -160,11 +160,11 @@ blockquote {
     font-weight: 400;
     line-height: 1.75em;
     color: #313131; }
-    @media (min-width: 599px) {
+    @media (min-width: 800px) {
       .single .content {
         width: 700px;
         font-size: 15pt; } }
-    @media (max-width: 599px) {
+    @media (max-width: 800px) {
       .single .content {
         font-size: 12pt; } }
     .single .content > p:first-of-type:first-letter {
@@ -193,7 +193,7 @@ blockquote {
       background: #E4E7FD; }
   .list > article {
     margin-bottom: 30px; }
-    @media (min-width: 599px) {
+    @media (min-width: 800px) {
       .list > article {
         width: 50vw; } }
 
