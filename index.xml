@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Harrison Turton</title>
+    <title>h</title>
     <link>http://harrisonturton.github.io/</link>
-    <description>Recent content on Harrison Turton</description>
+    <description>Recent content on h</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 10 Oct 2018 00:43:23 +1100</lastBuildDate>
@@ -12,12 +12,13 @@
     
     
     <item>
-      <title>My First Post</title>
+      <title>Philosophy of Privacy: Nothing to Hide</title>
       <link>http://harrisonturton.github.io/post/my-first-post/</link>
       <pubDate>Wed, 10 Oct 2018 00:43:23 +1100</pubDate>
       
       <guid>http://harrisonturton.github.io/post/my-first-post/</guid>
-      <description>Cfasdfasdfasdfasdfadsf</description>
+      <description>“Nothing to hide, nothing to fear” (NTHNTF) is a myth that is built on certain false assumptions, and these assumptions are never questioned when it is wheeled out as an argument to support whatever draconian surveillance measure is being pushed out in the face of citizen opposition (commercial organisations rarely try such an approach, since it dooms them to failure from the very beginning). These assumptions include:
+Continuity When a large data gathering exercise is started, the lifespan of the system will almost always be greater than that of its instigators.</description>
     </item>
     
   </channel>

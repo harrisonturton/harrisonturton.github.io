@@ -13,12 +13,6 @@
   </url>
   
   <url>
-    <loc>http://harrisonturton.github.io/</loc>
-    <lastmod>2018-10-10T00:43:23+11:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://harrisonturton.github.io/post/</loc>
     <lastmod>2018-10-10T00:43:23+11:00</lastmod>
     <priority>0</priority>
@@ -26,6 +20,12 @@
   
   <url>
     <loc>http://harrisonturton.github.io/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://harrisonturton.github.io/</loc>
+    <lastmod>2018-10-10T00:43:23+11:00</lastmod>
     <priority>0</priority>
   </url>
   
