@@ -1,0 +1,227 @@
+@import "values";
+
+p {
+	margin-bottom: 30px;
+	&::selection {
+		background: $font-highlight;
+	}
+}
+
+h1 {
+	font-family: $serif;
+	font-weight: 400;
+	line-height: 1.6em;
+	text-align: center;
+	padding-top: 60px;
+	padding-bottom: 40px;
+	&::selection {
+		background: $font-highlight;
+	}
+
+	@include for-mobile {
+		font-size: 26pt;
+	}
+	@include for-desktop {
+		font-size: 36pt;
+		max-width: 60vw;
+	}
+}
+
+h2, h3, h4 {
+	font-family: $sans-serif;
+	font-weight: 600;
+	font-size: 18pt;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	&::selection {
+		background: $font-highlight;
+	}
+}
+
+a {
+	color: $accent;
+	border-bottom: 1px dotted $accent;
+	padding: 4px 0px 4px 0px;
+	&:hover {
+		background-color: $accent-light;
+	}
+	&::selection {
+		background: $font-highlight;
+	}
+}
+
+time {
+	font-family: SF UI Text, sans-serif;
+	font-smoothing: antialiased;
+	font-size: 0.8em;
+	color: $light-font-color;
+	opacity: 0.8;
+	&::selection {
+		background: $font-highlight;
+	}
+}
+
+.subheader {
+	font-family: $sans-serif;
+	text-align: center;
+	line-height: 1.5em;
+	color: $light-font-color;
+
+	@include for-mobile {
+		font-size: 12pt;
+	}
+	@include for-desktop {
+		font-size: 15pt;
+		max-width: 70vw;
+	}
+}
+
+.divider {
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	margin-top: 70px;
+	margin-bottom: 70px;
+	width: 70vw;
+}
+
+footer, .page-label {
+	margin-top: 70px;
+	margin-bottom: 30px;
+	display: flex;
+	flex: 1;
+	justify-content: center;
+	font-family: SF UI Text, sans-serif;
+	font-smoothing: antialiased;
+	font-size: 0.8em;
+	color: #959494;
+}
+
+.page-label {
+	margin: 0;
+}
+
+header {
+	margin: 30px;
+	margin-bottom: 70px;
+
+	.home-link {
+		display: inline-block;
+		position: relative;
+		font-family: $sans-serif;
+		font-weight: bold;
+		color: $font-color;
+		border: none;
+		width: 50px;
+		font-size: 16pt;
+		padding-left: 5px;
+		left: -15px;
+		transition: 250ms ease-out;
+		&:hover {
+			background-color: $font-color;
+			color: white;
+		}
+	}
+}
+
+blockquote {
+	position: relative;
+	align-self: center;
+	& > p {
+		padding: 40px 30px 40px 80px;
+		font-size: 16pt;
+		line-height: 1.5em;
+		font-style: italic;
+		background-color: $accent-light;
+		a {
+			background-color: $accent-light;
+		}
+		& > cite {
+			display: inline-block;
+			font-family: $sans-serif;
+			font-style: normal;
+			font-size: 10pt;
+			padding-top: 5px;
+			background-color: $accent-light;
+			left: 80px;
+			bottom: 20px;
+		}
+	}
+	&::before {
+		content: "”";
+		position: absolute;
+		top: 80px;
+		left: -20px;
+		font-size: 96pt;
+		color: #3648F1;
+	}
+}
+
+@include for-all-pages {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+@include for-single-pages {
+	padding: 20px;
+	.content {
+		font-family: $body;
+		font-weight: 400;
+		font-size: 15pt;
+		line-height: 1.75em;
+		color: $font-color;
+
+		@include for-desktop {
+			width: 700px;
+		}
+
+		& > p:first-of-type:first-letter {
+			float: left;
+			font-weight: bold;
+			font-size: 3.5em;
+			padding-top: 10px;
+			padding-right: 10px;
+		}
+	}
+}
+
+@include for-list-pages {
+	padding: 20px;
+	h2 {
+		font-size: 18pt;
+		text-align: left;
+		a {
+			color: $dark-font-color;
+			border-bottom: none;
+		}
+	}
+	article {
+		align-self: center;
+	}
+	.summary {
+		margin-top: 7px;
+		font-size: 14pt;
+		line-height: 1.5em;
+		color: $font-color;
+		&::selection {
+			background: $font-highlight;
+		}
+	}
+	& > article {
+		margin-bottom: 30px;
+		@include for-desktop {
+			width: 50vw;
+		}
+	}
+}
+
+.highlight pre {
+	padding: 20px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.highlight > pre > code span {
+	line-height: 10pt;
+}
