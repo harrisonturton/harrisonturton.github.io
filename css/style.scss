@@ -127,10 +127,15 @@ blockquote {
 	align-self: center;
 	& > p {
 		padding: 40px 30px 40px 80px;
-		font-size: 16pt;
 		line-height: 1.5em;
 		font-style: italic;
 		background-color: $accent-light;
+		@include for-desktop {
+			font-size: 16pt;
+		}
+		@include for-mobile {
+			font-size: 14pt;
+		}
 		a {
 			background-color: $accent-light;
 		}

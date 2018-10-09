@@ -121,10 +121,15 @@ blockquote {
   align-self: center; }
   blockquote > p {
     padding: 40px 30px 40px 80px;
-    font-size: 16pt;
     line-height: 1.5em;
     font-style: italic;
     background-color: #F6F5FE; }
+    @media (min-width: 800px) {
+      blockquote > p {
+        font-size: 16pt; } }
+    @media (max-width: 800px) {
+      blockquote > p {
+        font-size: 14pt; } }
     blockquote > p a {
       background-color: #F6F5FE; }
     blockquote > p > cite {
