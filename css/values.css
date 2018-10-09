@@ -1,0 +1,17 @@
+html, body, * {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  font-color: #313131;
+  font-feature-settings: "liga" on;
+  -moz-font-feature-settings: "liga" on;
+  text-rendering: optimizeLegibility;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased; }
+
+/*# sourceMappingURL=values.css.map */
