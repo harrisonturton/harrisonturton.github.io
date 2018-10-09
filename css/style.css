@@ -34,7 +34,7 @@ h1 {
       font-size: 26pt; } }
   @media (min-width: 800px) {
     h1 {
-      font-size: 36pt;
+      font-size: 40pt;
       max-width: 60vw; } }
 
 h2, h3, h4 {
@@ -83,6 +83,15 @@ time {
   margin-bottom: 70px;
   width: 70vw; }
 
+.inline-divider {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: 70px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  width: 70vw; }
+  .inline-divider::before {
+    content: ".  .  .  ."; }
+
 footer, .page-label {
   margin-top: 70px;
   margin-bottom: 30px;
@@ -120,16 +129,17 @@ blockquote {
   position: relative;
   align-self: center; }
   blockquote > p {
-    padding: 40px 30px 40px 80px;
     line-height: 1.5em;
     font-style: italic;
     background-color: #F6F5FE; }
     @media (min-width: 800px) {
       blockquote > p {
-        font-size: 16pt; } }
+        font-size: 16pt;
+        padding: 40px 30px 40px 80px; } }
     @media (max-width: 800px) {
       blockquote > p {
-        font-size: 14pt; } }
+        font-size: 14pt;
+        padding: 30px; } }
     blockquote > p a {
       background-color: #F6F5FE; }
     blockquote > p > cite {
@@ -143,13 +153,14 @@ blockquote {
       bottom: 20px; }
       blockquote > p > cite::before {
         content: '\a'; }
-  blockquote::before {
-    content: "”";
-    position: absolute;
-    top: 80px;
-    left: -20px;
-    font-size: 96pt;
-    color: #3648F1; }
+  @media (min-width: 800px) {
+    blockquote::before {
+      content: "”";
+      position: absolute;
+      top: 80px;
+      left: -20px;
+      font-size: 96pt;
+      color: #3648F1; } }
 
 .single, .list {
   display: flex;
@@ -163,15 +174,16 @@ blockquote {
   .single .content {
     font-family: Georgia, serif;
     font-weight: 400;
-    line-height: 1.75em;
     color: #313131; }
     @media (min-width: 800px) {
       .single .content {
         width: 700px;
-        font-size: 15pt; } }
+        font-size: 14pt;
+        line-height: 24pt; } }
     @media (max-width: 800px) {
       .single .content {
-        font-size: 12pt; } }
+        font-size: 13pt;
+        line-height: 18pt; } }
     .single .content > p:first-of-type:first-letter {
       float: left;
       font-weight: bold;
@@ -194,6 +206,8 @@ blockquote {
     font-size: 14pt;
     line-height: 1.5em;
     color: #313131; }
+    .list .summary p {
+      margin-bottom: 7px; }
     .list .summary::selection {
       background: #E4E7FD; }
   .list > article {

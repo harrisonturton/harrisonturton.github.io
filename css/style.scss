@@ -22,7 +22,7 @@ h1 {
 		font-size: 26pt;
 	}
 	@include for-desktop {
-		font-size: 36pt;
+		font-size: 40pt;
 		max-width: 60vw;
 	}
 }
@@ -83,6 +83,17 @@ time {
 	width: 70vw;
 }
 
+.inline-divider {
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	margin-top: 70px;
+	margin-top: 70px;
+	margin-bottom: 70px;
+	width: 70vw;
+	&::before {
+		content: ".  .  .  .";
+	}
+}
+
 footer, .page-label {
 	margin-top: 70px;
 	margin-bottom: 30px;
@@ -126,15 +137,16 @@ blockquote {
 	position: relative;
 	align-self: center;
 	& > p {
-		padding: 40px 30px 40px 80px;
 		line-height: 1.5em;
 		font-style: italic;
 		background-color: $accent-light;
 		@include for-desktop {
 			font-size: 16pt;
+			padding: 40px 30px 40px 80px;
 		}
 		@include for-mobile {
 			font-size: 14pt;
+			padding: 30px;
 		}
 		a {
 			background-color: $accent-light;
@@ -153,13 +165,15 @@ blockquote {
 			}
 		}
 	}
-	&::before {
-		content: "”";
-		position: absolute;
-		top: 80px;
-		left: -20px;
-		font-size: 96pt;
-		color: #3648F1;
+	@include for-desktop {
+		&::before {
+			content: "”";
+			position: absolute;
+			top: 80px;
+			left: -20px;
+			font-size: 96pt;
+			color: #3648F1;
+		}
 	}
 }
 
@@ -176,15 +190,16 @@ blockquote {
 	.content {
 		font-family: $body;
 		font-weight: 400;
-		line-height: 1.75em;
 		color: $font-color;
 
 		@include for-desktop {
 			width: 700px;
-			font-size: 15pt;
+			font-size: 14pt;
+			line-height: 24pt;
 		}
 		@include for-mobile {
-			font-size: 12pt;
+			font-size: 13pt;
+			line-height: 18pt;
 		}
 
 		& > p:first-of-type:first-letter {
@@ -215,6 +230,9 @@ blockquote {
 		font-size: 14pt;
 		line-height: 1.5em;
 		color: $font-color;
+		p {
+			margin-bottom: 7px;
+		}
 		&::selection {
 			background: $font-highlight;
 		}
